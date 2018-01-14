@@ -5,7 +5,7 @@ require_once 'database.php';
 if ($_SERVER['REQUEST_METHOD'] =='POST') {
 
     $name = mysqli_real_escape_string($mysqli, $_POST['name']);
-    $surname = mysqli_real_escape_string($mysqli, $_POST['surnane']);
+    $surname = mysqli_real_escape_string($mysqli, $_POST['surname']);
     $age = mysqli_real_escape_string($mysqli, $_POST['age']);
     $gender = mysqli_real_escape_string($mysqli, $_POST['gender']);
     $hobby = mysqli_real_escape_string($mysqli, $_POST['hobby']);
